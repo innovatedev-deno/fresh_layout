@@ -101,9 +101,6 @@ Deno.test("fresh layout tests", async (t) => {
     const page = manifest.routes["./routes/index.tsx"]!.default! as Page;
     const pageProps = {} as PageProps;
 
-    console.log(layout.toString())
-
-    console.log(layout(page, pageProps))
     assert(didRun, "layout did not run");
   })
 })

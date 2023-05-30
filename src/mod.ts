@@ -59,6 +59,8 @@ export const applyManifestLayouts = (manifest: Manifest): Manifest => {
         } else {
           pageRoutes.push({ path: route, module });
         }
+      } else {
+        rest.push({ path: route, module: mod });
       }
     }
   });
